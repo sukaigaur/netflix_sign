@@ -1,13 +1,154 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Yantramanav', sans-serif;
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ac9aedf1-a687-4c5d-965c-2fc3eac84aea/ed2f162a-b9ef-43fd-8042-84978039a3ba/IN-en-20221206-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.logo_class {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 30px;
+
+}
+
+.img_logo_class {
+  display: inline-block;
+  width: 167px;
+  height: 45px;
+}
+
+.signIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width:23rem;
+  padding: 2rem;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_form {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  margin-top: 16px;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+}
+
+input::placeholder {
+  font-family: 'Yantramanav', sans-serif;
+  color: #8c8c8c;
+  font-size: 18px;
+  padding-left: 14px;
+}
+
+button {
+  background-color: #e50914;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  margin-top: 32px;
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+.remember_style {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  margin-top: 6px;
+}
+
+.checkbox_remember {
+  display: inline-block;
+}
+
+input[type='checkbox'] {
+  float: left;
+  margin-top: 4px;
+  width: 12px;
+  height: 12px;
+  border-style: none;
+  border-color: none;
+  border-radius: 2px;
+  color: #333;
+}
+
+label {
+  color: #8c8c8c;
+  
+}
+label[type="me"] {
+  float: left;
+  margin-left: 6px;
+}
+
+
+label[type="help"] {
+  float: right;
+}
+
+.new_netflix_style {
+  color: #8c8c8c;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.para {
+  font-family: 'Yantramanav', sans-serif;
+  color: #8c8c8c;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  align-items: center;
+}
+
+.new_netflix_style p a {
+  list-style: none;
+  color: #fff;
+  padding-left: 6px;
+}
+
+@media (max-width: 480px) {
+  .signIn {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
